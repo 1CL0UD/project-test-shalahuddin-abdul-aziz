@@ -1,11 +1,18 @@
 import './App.css';
+import Banner from './components/Banner';
+import Header from './components/Header';
+import PostList from './components/PostList';
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-red-500">
-        Hello world!
-      </h1>
+      <div className="flex flex-col">
+        <Header />
+        <Banner />
+      </div>
+      <div className="flex flex-col">
+        <PostList />
+      </div>
     </>
   );
 }
